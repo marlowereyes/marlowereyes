@@ -1,5 +1,7 @@
 import ProjectFeatIntro from "../../../../components/ProjectFeatIntro";
 import ProjectFeatDetails from "../../../../components/ProjectFeatDetails";
+import Image from "next/image";
+import styles from "./budding-writer.module.css";
 
 export default function BuddingWriters() {
   return (
@@ -31,6 +33,40 @@ export default function BuddingWriters() {
           </>
         }
       />
+      <div className={styles.imageGallery}>
+        <Image
+          src="/images/budding-writers/bw2.png"
+          width={2000}
+          height={700}
+          alt="budding writers colour scheme"
+          className={styles.image2}
+        />
+        <div className={styles.gallerySection}>
+          <Image
+            src="/images/budding-writers/bw3.png"
+            width={800}
+            height={1200}
+            alt="budding writers Figma reservation page"
+            className={styles.image3}
+          />
+          <div className={styles.gallerySectionInside}>
+            <Image
+              src="/images/budding-writers/bw4.png"
+              width={800}
+              height={1200}
+              alt="budding writers Figma reservation page"
+              className={styles.image4}
+            />
+            <Image
+              src="/images/budding-writers/bw5.png"
+              width={800}
+              height={1200}
+              alt="budding writers Figma reservation page"
+              className={styles.image5}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
