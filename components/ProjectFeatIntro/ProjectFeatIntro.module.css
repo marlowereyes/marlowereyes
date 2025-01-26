@@ -24,10 +24,16 @@
 
 @media (min-width: 667px) and (max-width: 1024px) {
     .container {
-        margin: var(--margin-medium);
+        margin: 0rem 0rem 0rem 3rem;
     }
     .image {
         margin: 3rem 0rem 0rem 3rem;
+    }
+    .image {
+        width: 200vw; 
+        margin-left: 1rem;
+        margin-right: 0;
+        margin-top: 0;
     }
 }
 
@@ -40,13 +46,13 @@
         align-items: center;
     }
     .image {
-        width: 100vw; 
+        width: 140vw; 
         margin-left: 0;
         margin-right: 0;
         margin-top: 0;
     }
     .text p {
-        margin: 1rem 7rem 1rem 0rem;
+        margin: 1rem 3rem 1rem 0rem;
     }
     .text {
         margin-bottom: 3rem;

@@ -1,17 +1,18 @@
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./ProjectFeatDetails.module.css";
 
-export default function ProjectFeatIntro({
-    duration,
-    role,
-    tools
-}) {
+export default function ProjectFeatIntro({ duration, role, tools }) {
   return (
     <>
       <section className={styles.container}>
         <div className={styles.innerContainer}>
-          {/** <Image src={src} width={100} height={100} alt={altText} /> **/}
+          <Image
+            src="/images/budding-writers/bw-vid1.gif"
+            alt="scrolling through homepage of budding writers site"
+            width={500}
+            height={500}
+            className={styles.gif1}
+          />
           <div className={styles.text}>
             <h6>DETAILS.</h6>
             <div className={styles.details}>
