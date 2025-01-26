@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #181715;
+  --black-variant: #272727;
+  --red: #DB423A;
+  --red-variant: #8E1D17;
+  --cream: #F3E8CA;
+  --cream-variant: #7A7465;
+
+  --margin-large: 0rem 5rem;
+  --margin-medium: 0rem 3rem;
+  --margin-small: 0rem 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+h1 {
+  color: var(--cream);
+  font-family: Schibsted Grotesk;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+h2 {
+  color: var(--cream);
+  font-family: Schibsted Grotesk;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--cream);
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  color: var(--red);
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h5 {
+  color: var(--cream);
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+}
+
+h6 {
+  color: var(--cream);
+  font-family: Lekton;
+  font-size: 14px;
+}
+
+p {
+  color: var(--cream);
+  font-family: Schibsted Grotesk;
+  font-size: 12px;
+}
+
+a {
+  color: var(--red);
+  font-family: Lekton;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  h1 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 136px;
+  }
+  
+  h2 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  h4 {
+    color: var(--red);
+    font-family: Schibsted Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h5 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 24px;
+  }
+  
+  h6 {
+    color: var(--cream);
+    font-family: Lekton;
+    font-size: 20px;
+  }
+  
+  p {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 16px;
+  }
+  
+  a {
+    color: var(--red);
+    font-family: Lekton;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 667px) and (max-width: 1024px)  {
+  h1 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 104px;
+  }
+  
+  h2 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h4 {
+    color: var(--red);
+    font-family: Schibsted Grotesk;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  h5 {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 20px;
+  }
+  
+  h6 {
+    color: var(--cream);
+    font-family: Lekton;
+    font-size: 16px;
+  }
+  
+  p {
+    color: var(--cream);
+    font-family: Schibsted Grotesk;
+    font-size: 14px;
+  }
+  
+  a {
+    color: var(--red);
+    font-family: Lekton;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 667px) {
+
+}

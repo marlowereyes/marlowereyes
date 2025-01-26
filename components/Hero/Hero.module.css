@@ -1,0 +1,36 @@
+.gradientBackground {
+    height: 100vh; /* Set height of gradient section */
+    background: radial-gradient(
+      circle at var(--x, 50%) var(--y, 50%),
+      var(--red-variant),
+      #ad2e27,
+      var(--red)
+    );
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .hero {
+    margin: var(--margin-large);
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  @media (min-width: 667px) and (max-width: 1024px)  {
+    .hero {
+      margin: var(--margin-medium);
+      margin-bottom: 4rem;
+    }
+  }
+
+  @media (max-width: 667px) {
+    .hero {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: var(--margin-small);
+      margin-bottom: 2rem;
+    }
+  }

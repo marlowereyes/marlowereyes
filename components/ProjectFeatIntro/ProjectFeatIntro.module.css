@@ -1,0 +1,24 @@
+.content {
+    margin: var(--margin-small);
+    margin-top: 3rem;
+}
+
+.image {
+    width: 95vw;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.backLink {
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 2rem;
+}
+
+.text h2 {
+    margin-top: 3.2rem;
+}
+
+.text p {
+    margin: 1rem 0rem;
+}
