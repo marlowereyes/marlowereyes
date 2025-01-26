@@ -14,17 +14,15 @@ export default function ProjectFeatIntro({
   return (
     <>
       <section className={styles.container}>
-        <div className={styles.contentContainer}>
-          <div className={styles.content}>
-            <Link href="/projects" className={styles.backLink}>
-              ←
-            </Link>
-            <div className={styles.text}>
-              <h2>{name}</h2>
-              <h6>{type}</h6>
-              <p>{paragraph}</p>
-              <Link href={href}>{hrefText}</Link>
-            </div>
+        <Link href="/projects" className={styles.backLink}>
+          ←
+        </Link>
+        <div className={styles.content}>
+          <div className={styles.text}>
+            <h2>{name}</h2>
+            <h6>{type}</h6>
+            <p>{paragraph}</p>
+            <Link href={href}>{hrefText}</Link>
           </div>
           <Image
             src={src}

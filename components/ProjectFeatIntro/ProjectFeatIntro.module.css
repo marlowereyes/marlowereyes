@@ -1,12 +1,6 @@
-.content {
+.container {
     margin: var(--margin-small);
-    margin-top: 3rem;
-}
-
-.image {
-    width: 95vw;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
+    padding-top: 3rem;
 }
 
 .backLink {
@@ -15,10 +9,46 @@
     font-size: 2rem;
 }
 
+.image {
+    width: calc(100vw - 1rem);
+    margin: 2rem 0rem 0rem 1rem;
+}
+
 .text h2 {
     margin-top: 3.2rem;
 }
 
 .text p {
     margin: 1rem 0rem;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .container {
+        margin: var(--margin-medium);
+    }
+    .image {
+        margin: 3rem 0rem 0rem 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: 0rem 0rem 0rem 5rem;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+    }
+    .image {
+        width: 100vw; 
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .text p {
+        margin: 1rem 7rem 1rem 0rem;
+    }
+    .text {
+        margin-bottom: 3rem;
+    }
 }
