@@ -14,12 +14,14 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <Image
-        src={"/simple-logo.png"}
-        width={64}
-        height={24}
-        alt="marlowe reyes logo"
-      />
+      <Link href="/">
+        <Image
+          src={"/simple-logo.png"}
+          width={64}
+          height={24}
+          alt="marlowe reyes logo"
+        />
+      </Link>
       <nav className={styles.nav}>
         <Link href="/projects" className={styles.navLink}>Projects</Link>
         <Link href="/about" className={styles.navLink}>About</Link>

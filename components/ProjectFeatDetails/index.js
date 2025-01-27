@@ -1,14 +1,14 @@
 import Image from "next/image";
 import styles from "./ProjectFeatDetails.module.css";
 
-export default function ProjectFeatIntro({ duration, role, tools }) {
+export default function ProjectFeatIntro({ duration, role, tools, src, altText }) {
   return (
     <>
       <section className={styles.container}>
         <div className={styles.innerContainer}>
           <Image
-            src="/images/budding-writers/bw-vid1.gif"
-            alt="scrolling through homepage of budding writers site"
+            src={src}
+            alt={altText}
             width={500}
             height={500}
             className={styles.gif1}

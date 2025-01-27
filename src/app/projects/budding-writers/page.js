@@ -21,6 +21,8 @@ export default function BuddingWriters() {
         altText="computer of budding writers home screen"
       />
       <ProjectFeatDetails
+        src="/images/budding-writers/bw-vid1.gif"
+        altText="scrolling through Budding Writers homepage"
         duration="5 months"
         role="Project Manager & UX/UI Designer — Wireframing, Prototyping, Content Inventory, User Journey Mapping, User Research, Usability Testing"
         tools={
@@ -41,6 +43,13 @@ export default function BuddingWriters() {
           alt="budding writers colour scheme"
           className={styles.image2}
         />
+          <Image
+            src="/images/budding-writers/bw-vid2.gif"
+            alt="scrolling through Budding Writers cafe landing page"
+            width={1920}
+            height={980}
+            className={styles.gif1}
+          />
         <div className={styles.gallerySection}>
           <Image
             src="/images/budding-writers/bw3.png"

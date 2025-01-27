@@ -36,3 +36,23 @@
         gap: 1rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .imageGallery {
+        margin: var(--margin-large);
+        margin-top: 6rem;
+    }
+    .gallerySection {
+        gap: 1.5rem;
+        margin-bottom: 7rem;
+    }
+    .gallerySectionInside {
+        gap: 1.5rem;
+    }
+    .gif1 {
+        margin-bottom: 1.5rem;
+    }
+    .image3 {
+        width: 50vw;
+    }
+}
