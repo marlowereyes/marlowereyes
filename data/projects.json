@@ -1,0 +1,21 @@
+[
+    {
+      "href": "/projects/tranquillity-cranes",
+      "name": "Tranquillity Cranes",
+      "src": "/images/folder/tc.png",
+      "categories": ["All", "UX/UI"]
+    },
+    {
+      "href": "/projects/budding-writers",
+      "name": "Budding Writers",
+      "src": "/images/folder/bw.png",
+      "categories": ["All", "UX/UI"]
+    },
+    {
+      "href": "/projects/mechanical-object",
+      "name": "Mechanical Object",
+      "src": "/images/folder/mo.png",
+      "categories": ["All", "Graphic"]
+    }
+  ]
+  

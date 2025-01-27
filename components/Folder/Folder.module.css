@@ -1,0 +1,13 @@
+.container {
+    margin: var(--margin-large);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bodyFolder {
+    padding: 2rem;
+    background-color: var(--cream);
+    border-radius: 0px 16px 16px 16px;
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,19 @@
+.container {
+    margin: var(--margin-large);
+    margin-bottom: 8rem;
+}
+
+.introText {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+.introText p {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.redBold {
+    font-weight: 600;
+    color: var(--red);
+}
