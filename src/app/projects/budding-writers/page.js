@@ -43,13 +43,6 @@ export default function BuddingWriters() {
           alt="budding writers colour scheme"
           className={styles.image2}
         />
-          <Image
-            src="/images/budding-writers/bw-vid2.gif"
-            alt="scrolling through Budding Writers cafe landing page"
-            width={1920}
-            height={980}
-            className={styles.gif1}
-          />
         <div className={styles.gallerySection}>
           <Image
             src="/images/budding-writers/bw3.png"
