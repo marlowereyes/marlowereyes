@@ -1,0 +1,35 @@
+.container {
+    margin: var(--margin-small);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gradient {
+    background: radial-gradient(
+      circle at var(--x, 50%) var(--y, 50%),
+      var(--red-variant),
+      #ad2e27,
+      var(--red)
+    );
+    height: 12rem;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .container {
+        margin: var(--margin-medium);
+    }
+    .gradient {
+        height: 16rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: var(--margin-large);
+    }
+    .gradient {
+        height: 20rem;
+    }
+}
