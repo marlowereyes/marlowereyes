@@ -44,7 +44,7 @@ export default function BuddingWriters() {
         />
         <div className={styles.gallerySection}>
             <Image
-              src="/images/tranquillity-cranes/tc-vid2.gif"
+              src="/images/tranquillity-cranes/tc4.png"
               alt="completing the activities quiz in the tranquillity cranes app"
               width={430}
               height={932}
