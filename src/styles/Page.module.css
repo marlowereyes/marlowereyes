@@ -17,3 +17,8 @@
     font-weight: 600;
     color: var(--red);
 }
+
+.backgroundAfterGradient {
+    background-color: var(--black);
+    padding-top: 3rem;
+}
