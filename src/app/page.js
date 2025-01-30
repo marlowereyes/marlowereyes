@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <div className={styles.backgroundAfterGradient}>
       <div className={styles.container}>
         <div className={styles.introText}>
           <p>
@@ -28,7 +27,6 @@ export default function Home() {
             Writers & Tranquillity Cranes!
           </p>
         </div>
-      </div>
     </>
   );
 }

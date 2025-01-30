@@ -64,6 +64,10 @@
     background-color: var(--red);
   }
 
+  .navMobile {
+    display: none;
+  }
+
   @media (min-width: 667px) and (max-width: 1024px)  {
     .contactButton {
       font-size: 16px;
@@ -74,10 +78,62 @@
       font-size: 16px;
       margin-left: 20px;
     }
+    .navMobile {
+      display: none;
+    }
   }
 
   @media (max-width: 667px) {
     .nav {
       display: none;
+      width: 100vw;
+    }
+    .menuButton {
+      background: none;
+      border: none;
+      color: var(--cream);
+      cursor: pointer;
+    }
+    .mobileMenu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--black-variant);
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-radius: 0 0 0 5rem;
+      margin-left: 1rem;
+    }
+    
+    .mobileNavLink {
+      color: var(--red);
+      text-decoration: none;
+    }
+  
+    .mobileNavLink h2 {
+      color: var(--red);
+      text-align: left;
+    }
+    
+    .closeButton {
+      color: var(--cream);
+      display: flex;
+      background: none;
+      border: none;
+    }
+  
+    .menuButton {
+      font-size: 2rem;
+      display: block;
+    }
+    .navMobile {
+      display: block;
+    }
+    .mobileMenu.show {
+      display: flex;
     }
   }

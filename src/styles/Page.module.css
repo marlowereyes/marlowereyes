@@ -1,16 +1,17 @@
 .container {
-    margin: var(--margin-large);
-    margin-bottom: 8rem;
+    margin: var(--margin-small);
+    margin-bottom: 1rem;
 }
 
 .introText {
-    margin-top: 8rem;
     margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .introText p {
-    font-size: 40px;
+    font-size: 24px;
     margin-bottom: 1rem;
+    line-height: 32px;
 }
 
 .redBold {
@@ -18,7 +19,28 @@
     color: var(--red);
 }
 
-.backgroundAfterGradient {
-    background-color: var(--black);
-    padding-top: 3rem;
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .container {
+        margin: var(--margin-medium);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: var(--margin-large);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .introText p {
+        font-size: 40px;
+        margin-bottom: 2rem;
+        line-height: 50px;
+    }
+    
+    .redBold {
+        font-weight: 600;
+        color: var(--red);
+    }
 }
