@@ -13,6 +13,9 @@
   --margin-large: 0rem 5rem;
   --margin-medium: 0rem 3rem;
   --margin-small: 0rem 1rem;
+
+  --font-lekton: 'Lekton', sans-serif;
+  --font-schibsted-grotesk: 'Schibsted Grotesk', sans-serif;
 }
 
 * {
@@ -28,7 +31,7 @@ body {
 
 h1 {
   color: var(--cream);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 64px;
   font-weight: 700;
   line-height: 72px;
@@ -36,46 +39,46 @@ h1 {
 
 h2 {
   color: var(--cream);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 36px;
   font-weight: 600;
 }
 
 h3 {
   color: var(--cream);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 20px;
   font-weight: 600;
 }
 
 h4 {
   color: var(--red);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 16px;
   font-weight: 600;
 }
 
 h5 {
   color: var(--cream);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 16px;
 }
 
 h6 {
   color: var(--cream);
-  font-family: Lekton;
+  font-family: var(--font-lekton);
   font-size: 14px;
 }
 
 p {
   color: var(--cream);
-  font-family: Schibsted Grotesk;
+  font-family: var(--font-schibsted-grotesk);
   font-size: 12px;
 }
 
 a {
   color: var(--red);
-  font-family: Lekton;
+  font-family: var(--font-lekton);
   font-size: 14px;
   font-weight: 700;
   text-decoration: underline;

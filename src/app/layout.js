@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lekton, Schibsted_Grotesk } from "next/font/google";
 import "../styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lekton = Lekton({
+  variable: "--font-lekton",
   subsets: ["latin"],
+  weight: ["400", "700"] 
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const schibstedGrotesk = Schibsted_Grotesk({
+  variable: "--font-schibsted-grotesk",
   subsets: ["latin"],
+  weight: ["400", "600", "700"] 
 });
 
 export const metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lekton.variable} ${schibstedGrotesk.variable} antialiased`}
       >
         {children}
       </body>
