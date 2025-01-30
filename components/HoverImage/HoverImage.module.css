@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    width: 32%;
+    width: 100%;
     display: inline-block;
 }
 
@@ -44,4 +44,16 @@
 
 .container:hover .overlay h5 {
     opacity: 1;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .container {
+        width: 48.7%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 32%;
+    }
 }
