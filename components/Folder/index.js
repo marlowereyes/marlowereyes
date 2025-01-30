@@ -37,11 +37,6 @@ export default function Folder() {
             isActive={activeChip === "Motion"}
             onClick={() => handleChipClick("Motion")}
           />
-          <Chip
-            text="Development"
-            isActive={activeChip === "Development"}
-            onClick={() => handleChipClick("Development")}
-          />
         </div>
         <div className={styles.bodyFolder}>
           {imagesData
