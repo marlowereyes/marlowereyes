@@ -48,24 +48,13 @@
     border-radius: 50%;
   }
 
-  .contactButton {
-    background-color: var(--red-variant);
-    padding: 0.5rem 1.32rem;
-    margin-left: 24px;
-    text-decoration: none;
-    color: var(--cream);
-    font-size: 18px;
-    font-family: Schibsted Grotesk;
-    font-weight: 200;
-    border-radius: 2rem;
-  }
-
-  .contactButton:hover {
-    background-color: var(--red);
-  }
-
   .navMobile {
     display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: 667px) and (max-width: 1024px)  {

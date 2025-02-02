@@ -1,0 +1,23 @@
+.contactButton {
+    background-color: var(--red-variant);
+    padding: 0.5rem 1.32rem;
+    margin-left: 24px;
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 18px;
+    font-family: Schibsted Grotesk;
+    font-weight: 200;
+    border-radius: 2rem;
+  }
+
+  .contactButton:hover {
+    background-color: var(--red);
+  }
+
+  @media (min-width: 667px) and (max-width: 1024px)  {
+    .contactButton {
+      font-size: 16px;
+      margin-left: 20px;
+      padding: 0.5rem 1.16rem;
+    }
+}

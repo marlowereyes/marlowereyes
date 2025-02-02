@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
+import ContactButton from "../ContactButton";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,9 +31,7 @@ export default function Header() {
         <Link href="/about" className={styles.navLink}>
           About
         </Link>
-        <Link href="/#contact" className={styles.contactButton}>
-          Contact
-        </Link>
+        <ContactButton />
       </nav>
       <nav className={styles.navMobile}>
         <button
