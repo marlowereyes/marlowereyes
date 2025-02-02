@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import Header from "../../../components/Header";
 import SectionTitle from "../../../components/SectionTitle";
+import Footer from "../../../components/Footer";
 import Folder from "../../../components/Folder";
 
 export default function Projects() {
@@ -15,8 +15,11 @@ export default function Projects() {
   return (
     <>
       <Header />
+      <main>
       <SectionTitle title="PROJECTS" />
         <Folder />
+      </main>
+      <Footer />
     </>
   );
 }

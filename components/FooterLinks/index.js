@@ -39,7 +39,7 @@ export default function FooterLinks() {
             />
           </button>
           {copied && (
-            <div className="flex flex-col items-center md:items-start">
+            <div>
               <p style={{ color: "var(--red)" }}>marlowerreyes@gmail.com</p>
               <p>Copied to clipboard!</p>
             </div>

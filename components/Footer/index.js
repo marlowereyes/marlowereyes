@@ -1,5 +1,6 @@
 import FooterLinks from "../FooterLinks";
 import styles from "./Footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -17,6 +18,7 @@ export default function Footer() {
             Visions
           </h6>
         </div>
+        <Image src="/footer-logo.png" width={400} height={200} alt="Marlowe Reyes logo" className={styles.logo}/>
       </footer>
     </>
   );
