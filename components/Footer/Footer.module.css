@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--black-variant);
+}
+
+.container {
+    margin: var(--margin-large);
+    margin-bottom: 0;
+    padding: 3rem 0rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h6 {
+    color: var(--red);
+}
+
+.copyright {
+    font-family: var(--font-schibsted-grotesk);
+    color: var(--cream);
+}

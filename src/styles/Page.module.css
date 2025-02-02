@@ -15,11 +15,16 @@
     width: 90vw;
 }
 
+.placeholderDisclaimer {
+    background-color: var(--black);
+    margin-top: 3rem;
+}
+
 @media (min-width: 667px) and (max-width: 1024px)  {
     .intro {
         max-width: 100%;
         height: 50vh;
-        background-image: url("/images/mockups.png");
+        background-image: url("/images/landing-page/mockups.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -27,12 +32,16 @@
         margin: var(--margin-medium);
         margin-bottom: 0;
     }
+    .placeholderDisclaimer {
+        background-color: var(--black);
+        margin: 5rem 0rem;
+    }
 }
 
 @media (min-width: 1024px) {
     .intro {
-        height: 85vh;
-        background-image: url("/images/mockups.png");
+        height: 100vh;
+        background-image: url("/images/landing-page/mockups.png");
         background-size: cover;
         background-repeat: no-repeat;
         position: sticky;
@@ -42,6 +51,11 @@
     .container {
         margin: var(--margin-large);
         margin-bottom: 0;
-        padding: 8rem 0rem;
+        padding-top: 8rem;
+    }
+    .placeholderDisclaimer {
+        background-color: var(--black);
+        margin-top: 0;
+        margin-bottom: 8rem;
     }
 }
