@@ -1,0 +1,89 @@
+.greeting h2 {
+    color: var(--red);
+    font-size: 4.2rem;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.imageMe {
+    width: 100vw;
+}
+
+.aboutText {
+    margin: var(--margin-small);
+}
+
+.aboutText h3 {
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.externalLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cardsContainer {
+    background-color: var(--black-variant);
+    display: flex;
+    gap: 1rem;
+    margin: var(--margin-small);
+}
+
+.truthsLie {
+    padding: 2rem;
+    background-color: var(--black-variant);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        display: flex;
+    }
+    .greeting h2 {
+        margin-bottom: 3rem;
+    }
+    .greeting {
+        align-items: flex-end;
+    }
+    .aboutText {
+        margin: var(--margin-large);
+        margin-left: 2rem;
+    }
+    .intro {
+        display: flex;
+        align-items: flex-start;
+    }
+    .aboutText {
+        width: 100%;
+    }
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .intro {
+        display: flex;
+    }
+    .greeting h2 {
+        margin-bottom: 3rem;
+    }
+    .greeting {
+        align-items: flex-end;
+    }
+    .aboutText {
+        margin: var(--margin-medium);
+        margin-left: 1rem;
+    }
+    .intro {
+        display: flex;
+        align-items: flex-start;
+    }
+    .aboutText {
+        width: 100%;
+    }
+}
