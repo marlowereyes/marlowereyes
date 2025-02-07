@@ -2,15 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./ProjectFeatIntro.module.css";
 
-export default function ProjectFeatIntro({
-  name,
-  type,
-  paragraph,
-  href,
-  hrefText,
-  src,
-  altText,
-}) {
+export default function ProjectFeatIntro({ 
+  name, 
+  duration, 
+  role, 
+  tools }) {
   return (
     <>
       <section className={styles.container}>
@@ -18,19 +14,19 @@ export default function ProjectFeatIntro({
           ←
         </Link>
         <div className={styles.content}>
-          <div className={styles.text}>
-            <h2>{name}</h2>
-            <h6>{type}</h6>
-            <p>{paragraph}</p>
-            <Link href={href}>{hrefText}</Link>
+          <h1>{name}</h1>
+          <div className={styles.details}>
+            <div className={styles.colLeft}>
+              <h6>DURATION</h6>
+              <p>{duration}</p>
+              <h6>ROLE</h6>
+              <p>{role}</p>
+            </div>
+            <div className={styles.colRight}>
+              <h6>TOOLS</h6>
+              <p>{tools}</p>
+            </div>
           </div>
-          <Image
-            src={src}
-            width={500}
-            height={700}
-            alt={altText}
-            className={styles.image}
-          />
         </div>
       </section>
     </>

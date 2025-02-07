@@ -1,5 +1,5 @@
 import ProjectFeatIntro from "../../../../components/ProjectFeatIntro";
-import ProjectFeatDetails from "../../../../components/ProjectFeatDetails";
+import ProjectFeatDetails from "../../../../components/ProjectFeatOverview";
 import Image from "next/image";
 import styles from "./budding-writer.module.css";
 
