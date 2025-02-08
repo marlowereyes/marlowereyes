@@ -43,7 +43,7 @@ export default function BuddingWriters() {
           <div className={styles.features}>
             <h2>Features</h2>
             <hr />
-            <ScaleImage caption="CAFE MENU & RESERVATIONS" src="/images/projects/budding-writers/bw2.png"/>
+            <ScaleImage caption="CAFE MENU & RESERVATIONS" altText="kill me now" src="/images/projects/budding-writers/bw2.png"/>
           </div>
         </section>
       </main>
