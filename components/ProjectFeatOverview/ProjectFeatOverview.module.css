@@ -12,20 +12,20 @@
     z-index: 2;
     height: 100vh;
     display: flex;
-    align-items: flex-end;
+    background-color: rgba(24, 23, 21, 0.8);
+    backdrop-filter: blur(10px); 
 }
 
 .overview {
     margin-bottom: 0;
     padding: 5rem 0rem;
-    background-color: var(--black-variant);
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Slightly pushed down */
+    opacity: 0; 
+    transform: translateY(20px); 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .overview.visible {
-    opacity: 1; /* Fade in */
+    opacity: 1; 
     transform: translateY(0);
 }
 
@@ -35,6 +35,6 @@
     margin-bottom: 0;
 }
 
-.overview p {
-    margin-bottom: 1rem;
+.overview h5 {
+    margin-bottom: 3rem;
 }

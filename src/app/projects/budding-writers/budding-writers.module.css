@@ -1,0 +1,20 @@
+.features {
+    position: relative;
+    z-index: 3;
+    background-color: var(--black);
+    padding: 5rem;
+    color: var(--cream);
+}
+
+.features h2 {
+    margin-bottom: 0.72rem;
+}
+
+.features > img {
+    transition: transform 0.4s ease-in-out; 
+  }
+
+  .features > img:hover {
+    transform: translateY(-3px);
+    color: var(--primary);
+  }
