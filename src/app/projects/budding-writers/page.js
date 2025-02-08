@@ -1,30 +1,24 @@
+"use client";
+
 import ProjectFeatIntro from "../../../../components/ProjectFeatIntro";
-import ProjectFeatDetails from "../../../../components/ProjectFeatDetails";
-import Image from "next/image";
-import styles from "./budding-writer.module.css";
+import ProjectFeatOverview from "../../../../components/ProjectFeatOverview";
+import { useEffect } from "react";
 
 export default function BuddingWriters() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <ProjectFeatIntro
         name="Budding Writers"
-        type="UX/UI DESIGN"
-        paragraph="Budding Writers is a café curated for literary enthusiasts. 
-        It offers aspiring writers a haven to find secondhand books, connect with 
-        the writing community, or simply enjoy coffee and pastries. For this project, 
-        a team of four used Figma to design and WordPress to develop a website for 
-        Budding Writers. The website aims to enhance the customer experience by offering 
-        features such as online ordering, reservations, a bookstore, and an events calendar."
-        href="https://www.budding-writers.org/"
-        hrefText="View the site ↗"
-        src="/images/budding-writers/bw1.png"
-        altText="computer of budding writers home screen"
-      />
-      <ProjectFeatDetails
-        src="/images/budding-writers/bw-vid1.gif"
-        altText="scrolling through Budding Writers homepage"
         duration="5 months"
-        role="Project Manager & UX/UI Designer — Wireframing, Prototyping, Content Inventory, User Journey Mapping, User Research, Usability Testing"
+        role={
+          <>
+            UX//UI Designer <br />
+            Project Manager
+          </>
+        }
         tools={
           <>
             Figma <br />
@@ -35,40 +29,13 @@ export default function BuddingWriters() {
           </>
         }
       />
-      <div className={styles.imageGallery}>
-        <Image
-          src="/images/budding-writers/bw2.png"
-          width={2000}
-          height={700}
-          alt="budding writers colour scheme"
-          className={styles.image2}
-        />
-        <div className={styles.gallerySection}>
-          <Image
-            src="/images/budding-writers/bw3.png"
-            width={800}
-            height={1200}
-            alt="budding writers Figma reservation page"
-            className={styles.image3}
-          />
-          <div className={styles.gallerySectionInside}>
-            <Image
-              src="/images/budding-writers/bw4.png"
-              width={800}
-              height={1200}
-              alt="budding writers Figma reservation page"
-              className={styles.image4}
-            />
-            <Image
-              src="/images/budding-writers/bw5.png"
-              width={800}
-              height={1200}
-              alt="budding writers Figma reservation page"
-              className={styles.image5}
-            />
-          </div>
-        </div>
-      </div>
+      <ProjectFeatOverview
+        src="/images/projects/budding-writers/bw1.png"
+        altText="Budding Writers desktop mockup for home page"
+        overview="Budding Writers Café is a curated space for literary enthusiasts, offering a welcoming environment to discover secondhand books, connect with the writing community, or simply enjoy some pastries. The website aims to include useful features like a digital menu, advance reservations, an online bookstore, and a calendar of events—streamlining the customer experience and engaging with the café’s offerings both online and in person. Designed to evoke warmth and creativity, the site uses an earthy palette of soft greens, browns, and neutrals to reflect growth, while clean layouts, organic shapes, and classic typography reinforce its identity as a space for writers and book lovers."
+        href="https://tranquillity-cranes.vercel.app/"
+        linkText="View the site ↗"
+      />
     </>
   );
 }

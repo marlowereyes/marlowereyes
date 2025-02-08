@@ -1,6 +1,14 @@
 .container {
-    margin: var(--margin-small);
+    margin: var(--margin-large);
     padding-top: 3rem;
+    margin-bottom: 0rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 0;
 }
 
 .backLink {
@@ -9,48 +17,35 @@
     font-size: 2rem;
 }
 
-.image {
-    width: calc(100vw - 1rem);
-    margin: 2rem 0rem 0rem 1rem;
+.content h1 {
+    width: 50%;
+    margin-top: 4rem;
+    font-weight: 500;
 }
 
-.text h2 {
-    margin-top: 3.2rem;
+.details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
 }
 
-.text p {
-    margin: 1rem 0rem;
+.details p {
+    margin-bottom: 2rem;
 }
+
+.details h6 {
+    color: var(--cream-variant);
+}
+
+
 
 @media (min-width: 667px) and (max-width: 1024px) {
-    .container {
-        margin: var(--margin-medium);
-        padding-top: 3rem;
-    }
-    .image {
-        width: calc(100vw - 3rem);
-        margin: 2rem 0rem 0rem 3rem;
-    }
+
 }
 
-@media (min-width: 1024px) {
-    .container {
-        margin: 0rem 0rem 0rem 5rem;
-    }
-    .content {
-        display: flex;
-        align-items: center;
-    }
-    .image {
-        width: 140vw; 
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-    }
-    .text p {
-        margin: 1rem 3rem 1rem 0rem;
-    }
-    .text {
-        margin-bottom: 3rem;
-    }
+@media (max-width: 667px) {
+
 }
