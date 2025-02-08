@@ -16,7 +16,7 @@ export default function ProjectFeatIntro({ src, altText, overview, href, linkTex
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 } // Adjust visibility trigger
+      { threshold: 0.2 }
     );
 
     if (overviewRef.current) {
@@ -47,7 +47,7 @@ export default function ProjectFeatIntro({ src, altText, overview, href, linkTex
           className={`${styles.overview} ${isVisible ? styles.visible : ""}`}
         >
           <div className={styles.overviewText}>
-            <p>{overview}</p>
+            <h5>{overview}</h5>
             <Link href={href}>{linkText}</Link>
           </div>
         </div>
