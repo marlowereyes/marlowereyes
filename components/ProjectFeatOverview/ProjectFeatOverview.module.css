@@ -1,52 +1,6 @@
 .imageContainer {
     position: sticky;
     top: 0;
-    z-index: -50;
+    z-index: 1;
     height: 100vh;
-    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1); 
-}
-
-.allowImageScroll {
-    transform: translateY(-100%);
-}
-
-.image1 {
-    height: 100%;
-    object-fit: cover;
-}
-
-.overviewContainer {
-    background-color: var(--black-variant);
-    border-radius: 0 10rem 0 0;
-    position: relative;
-    z-index: -1;
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease;
-}
-
-.showOverview {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.stickyBottom {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-} 
-
-.hideOverview {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease;
-}
-
-.overview {
-    margin: var(--margin-large);
-    padding: 3rem 0rem 0rem 0rem;
-}
-
-.overview p {
-    margin-bottom: 1rem;
 }

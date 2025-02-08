@@ -1,8 +1,5 @@
 import ProjectFeatIntro from "../../../../components/ProjectFeatIntro";
 import ProjectFeatOverview from "../../../../components/ProjectFeatOverview";
-import Image from "next/image";
-import styles from "./tranquillity-cranes.module.css";
-import Link from "next/link";
 
 export default function TranquillityCranes() {
   return (
@@ -28,7 +25,7 @@ export default function TranquillityCranes() {
       />
       <ProjectFeatOverview
         src="/images/projects/tranquillity-cranes/tc1.png"
-        altText="Tranquillity Cranes home page iphone mockup"
+        altText="Tranquillity Cranes iphone mockup for home page"
         overview="Tranquility Cranes is a mobile app designed to support individuals facing 
         stress, anxiety, and other mental health challenges. The app bridges the gap in mental 
         health care with features like guided coping exercises, suggested mental health activities 
