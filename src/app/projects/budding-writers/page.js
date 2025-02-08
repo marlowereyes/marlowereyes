@@ -5,6 +5,8 @@ import ProjectFeatOverview from "../../../../components/ProjectFeatOverview";
 import { useEffect } from "react";
 import styles from "./budding-writers.module.css";
 import ScaleImage from "../../../../components/ScaleImage";
+import FigmaEmbed from "../../../../components/FigmaEmbed";
+import Image from "next/image";
 
 export default function BuddingWriters() {
   useEffect(() => {
@@ -41,9 +43,53 @@ export default function BuddingWriters() {
         />
         <section className={styles.gallery}>
           <div className={styles.features}>
-            <h2>Features</h2>
-            <hr />
-            <ScaleImage caption="CAFE MENU & RESERVATIONS" altText="kill me now" src="/images/projects/budding-writers/bw2.png"/>
+            <div className={styles.title}>
+              <h2>Features</h2>
+              <hr />
+            </div>
+            <ScaleImage
+              caption="CAFE MENU & RESERVATIONS"
+              altText="Reservation form and lunch menu"
+              src="/images/projects/budding-writers/bw2.png"
+            />
+            <ScaleImage
+              caption="EVENTS CALENDAR"
+              altText="List of upcoming events in events page"
+              src="/images/projects/budding-writers/bw3.png"
+            />
+            <ScaleImage
+              caption="ONLINE SECONDHAND BOOKSTORE"
+              altText="list of books to purchase and checkout form"
+              src="/images/projects/budding-writers/bw4.png"
+            />
+          </div>
+          <div className={styles.branding}>
+            <div className={styles.title}>
+              <h2>Branding</h2>
+              <hr />
+            </div>
+          </div>
+          <div className={styles.initialProcess}>
+            <div className={styles.title}>
+              <h2>Initial Process</h2>
+              <hr />
+            </div>
+            <FigmaEmbed src="https://embed.figma.com/board/K1nwshTKflCnJrz2ddvq6n/Budding-Writers-User-Story-Mapping?node-id=0-1&embed-host=share" />
+            <div className={styles.userPersonas}>
+              <Image
+                alt="Primary user persona for Juno"
+                src="/images/projects/budding-writers/bw7.png"
+                width={500}
+                height={500}
+              />
+              <Image
+                alt="Secondary user persona for Youssef"
+                src="/images/projects/budding-writers/bw8.png"
+                width={500}
+                height={500}
+              />
+            </div>
+            <FigmaEmbed src="https://embed.figma.com/design/Yfd7jOqD4pDuAy2ymZVRQo/Budding-Writers-Prototype?node-id=279-1869&embed-host=share" />
           </div>
         </section>
       </main>

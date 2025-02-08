@@ -1,0 +1,13 @@
+.container {
+    margin: 4rem 8rem;
+}
+
+.container iframe {
+    width: 100%;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .container {
+        margin: 3rem 4rem;
+    }
+}

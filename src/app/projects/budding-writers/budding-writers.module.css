@@ -1,9 +1,8 @@
-.features {
+.gallery {
     position: relative;
     z-index: 3;
     background-color: var(--black);
     padding: 5rem;
-    color: var(--cream);
 }
 
 .features h2 {
@@ -14,7 +13,25 @@
     transition: transform 0.4s ease-in-out; 
   }
 
-  .features > img:hover {
-    transform: translateY(-3px);
-    color: var(--primary);
-  }
+.features > img:hover {
+  transform: translateY(-3px);
+  color: var(--primary);
+}
+
+.title hr {
+  border: 0; 
+  border-top: 0.2px solid var(--cream);
+  flex-grow: 1;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userPersonas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
