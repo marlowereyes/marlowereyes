@@ -68,6 +68,34 @@ export default function BuddingWriters() {
               <h2>Branding</h2>
               <hr />
             </div>
+            <ScaleImage
+              caption="COLOUR PALETTE"
+              altText="color palette"
+              src="/images/projects/budding-writers/bw5.png"
+            />
+            <div className={styles.brandSection}>
+              <div className={styles.mockups}>
+                <h6>VISUAL MOCKUPS</h6>
+                <Image
+                  src="/images/projects/budding-writers/bw6.png"
+                  alt="mockups of budding writers logo"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <div className={styles.designNotes}>
+                <h6>DESIGN NOTES</h6>
+                <p>
+                  Classic, neutral, with a pop of natural freshness - these
+                  colours were chosen according to the client’s vision. Jet and
+                  White Smoke are the primary colours most used, with Walnut
+                  Brown, Asparagus and Ash Blue being used as accent colours
+                  (e.g. hover features, active buttons, borders, cards) for a
+                  touch of vibrancy. Together, these colours offer a warm,
+                  welcoming yet eccentric vibe.
+                </p>
+              </div>
+            </div>
           </div>
           <div className={styles.initialProcess}>
             <div className={styles.title}>
