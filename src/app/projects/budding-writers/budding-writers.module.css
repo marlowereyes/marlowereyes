@@ -35,3 +35,20 @@
   gap: 1rem;
   justify-content: center;
 }
+
+.brandSection {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0rem 8rem;
+}
+
+.designNotes p {
+  background-color: #5b4f42;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.mockups img{
+  width: 300vw;
+}
