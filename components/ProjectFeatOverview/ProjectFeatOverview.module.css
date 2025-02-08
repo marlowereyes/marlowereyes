@@ -1,0 +1,40 @@
+.imageContainer {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    filter: saturate(1.2);
+}
+
+.overviewContainer {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.overview {
+    margin-bottom: 0;
+    padding: 5rem 0rem;
+    background-color: var(--black-variant);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly pushed down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.overview.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0);
+}
+
+
+.overviewText {
+    margin: var(--margin-large);
+    margin-bottom: 0;
+}
+
+.overview p {
+    margin-bottom: 1rem;
+}
