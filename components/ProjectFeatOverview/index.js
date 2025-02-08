@@ -6,24 +6,6 @@ import styles from "./ProjectFeatOverview.module.css";
 import Link from "next/link";
 
 export default function ProjectFeatIntro({ src, altText, overview, href, linkText }) {
-  useEffect(() => {
-    const imageContainer = document.querySelector(`.${styles.imageContainer}`);
-    const overviewContainer = document.querySelector(`.${styles.overviewContainer}`);
-
-    const handleScroll = () => {
-      const imageRect = imageContainer.getBoundingClientRect();
-      const imageStuck = imageRect.top <= 0;
-
-      if (imageStuck) {
-        overviewContainer.classList.add(styles.showOverview, styles.stickyBottom);
-      } else {
-        overviewContainer.classList.remove(styles.showOverview, styles.stickyBottom);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
