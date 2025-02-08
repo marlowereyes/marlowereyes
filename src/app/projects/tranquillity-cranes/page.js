@@ -1,7 +1,13 @@
+"use client";
+
 import ProjectFeatIntro from "../../../../components/ProjectFeatIntro";
 import ProjectFeatOverview from "../../../../components/ProjectFeatOverview";
+import { useEffect } from "react";
 
 export default function TranquillityCranes() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <ProjectFeatIntro
@@ -10,16 +16,17 @@ export default function TranquillityCranes() {
         role={
           <>
             UX//UI Designer <br />
-            Project Manager
+            Graphic Designer
           </>
         }
         tools={
           <>
             Figma <br />
-            WordPress <br />
-            Microsoft Excel <br />
             Adobe Illustrator <br />
-            Adobe Photoshop
+            Adobe Photoshop <br />
+            Adobe After Effects <br />
+            NextJS <br />
+            React
           </>
         }
       />
