@@ -1,11 +1,34 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import styles from "./ProjectFeatOverview.module.css";
 import Link from "next/link";
 
 export default function ProjectFeatIntro({ src, altText, overview, href, linkText }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const overviewRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust visibility trigger
+    );
+
+    if (overviewRef.current) {
+      observer.observe(overviewRef.current);
+    }
+
+    return () => {
+      if (overviewRef.current) {
+        observer.unobserve(overviewRef.current);
+      }
+    };
+  }, []);
 
   return (
     <>
@@ -19,9 +42,14 @@ export default function ProjectFeatIntro({ src, altText, overview, href, linkTex
         />
       </div>
       <section className={styles.overviewContainer}>
-        <div className={styles.overview}>
-          <p>{overview}</p>
-          <Link href={href}>{linkText}</Link>
+        <div 
+          ref={overviewRef} 
+          className={`${styles.overview} ${isVisible ? styles.visible : ""}`}
+        >
+          <div className={styles.overviewText}>
+            <p>{overview}</p>
+            <Link href={href}>{linkText}</Link>
+          </div>
         </div>
       </section>
     </>
