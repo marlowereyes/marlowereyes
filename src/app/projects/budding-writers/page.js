@@ -8,6 +8,7 @@ import ScaleImage from "../../../../components/ScaleImage";
 import FigmaEmbed from "../../../../components/FigmaEmbed";
 import Image from "next/image";
 import GalleryTitle from "../../../../components/GalleryTitle";
+import GalleryLayout from "../../../../components/GalleryLayout";
 
 export default function BuddingWriters() {
   useEffect(() => {
@@ -42,7 +43,9 @@ export default function BuddingWriters() {
           href="https://budding-writers.org/"
           linkText="View the site ↗"
         />
-        <section className={styles.gallery}>
+        <GalleryLayout 
+          content={
+              <>
           <div className={styles.features}>
             <GalleryTitle title="Features" />
             <ScaleImage
@@ -95,8 +98,8 @@ export default function BuddingWriters() {
           <div className={styles.initialProcess}>
           <GalleryTitle title="Initial Process" />
             <FigmaEmbed src="https://embed.figma.com/board/K1nwshTKflCnJrz2ddvq6n/Budding-Writers-User-Story-Mapping?node-id=0-1&embed-host=share" />
-            <div className={styles.userPersonas}>
-              {/**              
+            <h6>USER PERSONAS</h6>
+            <div className={styles.userPersonas}>          
               <Image
                 alt="Primary user persona for Juno"
                 src="/images/projects/budding-writers/bw7.png"
@@ -109,11 +112,11 @@ export default function BuddingWriters() {
                 width={500}
                 height={500}
               /> 
-              */}
             </div>
-            <FigmaEmbed src="https://embed.figma.com/design/Yfd7jOqD4pDuAy2ymZVRQo/Budding-Writers-Prototype?node-id=279-1869&embed-host=share" />
-          </div>
-        </section>
+          </div>    
+              </>
+          }
+        />
       </main>
     </>
   );

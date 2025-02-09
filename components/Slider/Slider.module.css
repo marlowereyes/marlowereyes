@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 760px;
+    overflow: hidden;
+    cursor: ew-resize;
+    user-select: none;
+  }
+  
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: inset(0 0 0 50%);
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--cream);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    cursor: ew-resize;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+
+  .contentContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  

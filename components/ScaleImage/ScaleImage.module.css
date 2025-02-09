@@ -17,24 +17,25 @@
   margin-bottom: 4rem;
 }
 
-.content {
-  margin: 0rem 10rem;
-}
-
 @media (min-width: 667px) and (max-width: 1024px)  {
-  .content {
-      margin: 1rem 6rem;
-  }
   .container {
     margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 667px) {
-  .content {
-    margin: 1rem 3rem;
-}
 .container {
   margin-bottom: 1rem;
 }
+}
+
+.gallery {
+  position: relative;
+  z-index: 3;
+  background-color: var(--black);
+  padding-top: 1rem;
+}
+
+.layout {
+  margin: 0rem 10rem;
 }
