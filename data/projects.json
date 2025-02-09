@@ -1,21 +1,27 @@
 [
-    {
-      "href": "/projects/tranquillity-cranes",
-      "name": "Tranquillity Cranes",
-      "src": "/images/folder/tc.png",
-      "categories": ["All", "UX/UI"]
-    },
-    {
-      "href": "/projects/budding-writers",
-      "name": "Budding Writers",
-      "src": "/images/folder/bw.png",
-      "categories": ["All", "UX/UI"]
-    },
-    {
-      "href": "/projects/give-me-love",
-      "name": "Give Me Love",
-      "src": "/images/projects/gml/gml1.png",
-      "categories": ["All", "Graphic"]
-    }
+  {
+    "href": "/projects/civica",
+    "name": "Civica",
+    "src": "/images/folder/c.png",
+    "categories": ["All", "UX/UI"]
+  },
+  {
+    "href": "/projects/budding-writers",
+    "name": "Budding Writers",
+    "src": "/images/folder/bw.png",
+    "categories": ["All", "UX/UI"]
+  },
+  {
+    "href": "/projects/tranquillity-cranes",
+    "name": "Tranquillity Cranes",
+    "src": "/images/folder/tc.png",
+    "categories": ["All", "UX/UI"]
+  },
+  {
+    "href": "/projects/give-me-love",
+    "name": "Give Me Love",
+    "src": "/images/folder/gml.png",
+    "categories": ["All", "Graphic"]
+  }
   ]
   

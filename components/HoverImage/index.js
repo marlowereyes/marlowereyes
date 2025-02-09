@@ -12,7 +12,7 @@ export default function HoverImage({
       <Link href={href}>
         <Image src={src} width={1080} height={1350} alt="altText" className={styles.image} />
         <div className={styles.overlay}>
-          <h5>{name}</h5>
+          <h3>{name}</h3>
         </div>
       </Link>
     </div>

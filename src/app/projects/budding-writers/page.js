@@ -5,6 +5,10 @@ import ProjectFeatOverview from "../../../../components/ProjectFeatOverview";
 import { useEffect } from "react";
 import styles from "./budding-writers.module.css";
 import ScaleImage from "../../../../components/ScaleImage";
+import FigmaEmbed from "../../../../components/FigmaEmbed";
+import Image from "next/image";
+import GalleryTitle from "../../../../components/GalleryTitle";
+import GalleryLayout from "../../../../components/GalleryLayout";
 
 export default function BuddingWriters() {
   useEffect(() => {
@@ -39,13 +43,80 @@ export default function BuddingWriters() {
           href="https://budding-writers.org/"
           linkText="View the site ↗"
         />
-        <section className={styles.gallery}>
+        <GalleryLayout 
+          content={
+              <>
           <div className={styles.features}>
-            <h2>Features</h2>
-            <hr />
-            <ScaleImage caption="CAFE MENU & RESERVATIONS" altText="kill me now" src="/images/projects/budding-writers/bw2.png"/>
+            <GalleryTitle title="Features" />
+            <ScaleImage
+              caption="CAFE MENU & RESERVATIONS"
+              altText="Reservation form and lunch menu"
+              src="/images/projects/budding-writers/bw2.png"
+            />
+            <ScaleImage
+              caption="EVENTS CALENDAR"
+              altText="List of upcoming events in events page"
+              src="/images/projects/budding-writers/bw3.png"
+            />
+            <ScaleImage
+              caption="ONLINE SECONDHAND BOOKSTORE"
+              altText="list of books to purchase and checkout form"
+              src="/images/projects/budding-writers/bw4.png"
+            />
           </div>
-        </section>
+          <div className={styles.branding}>
+          <GalleryTitle title="Branding" />
+            <ScaleImage
+              caption="COLOUR PALETTE"
+              altText="color palette"
+              src="/images/projects/budding-writers/bw5.png"
+            />
+            <div className={styles.brandSection}>
+              <div className={styles.mockups}>
+                <h6>VISUAL MOCKUPS</h6>
+                <Image
+                  src="/images/projects/budding-writers/bw6.png"
+                  alt="mockups of budding writers logo"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <div className={styles.designNotes}>
+                <h6>DESIGN NOTES</h6>
+                <p>
+                  Classic, neutral, with a pop of natural freshness - these
+                  colours were chosen according to the client’s vision. Jet and
+                  White Smoke are the primary colours most used, with Walnut
+                  Brown, Asparagus and Ash Blue being used as accent colours
+                  (e.g. hover features, active buttons, borders, cards) for a
+                  touch of vibrancy. Together, these colours offer a warm,
+                  welcoming yet eccentric vibe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.initialProcess}>
+          <GalleryTitle title="Initial Process" />
+            <FigmaEmbed src="https://embed.figma.com/board/K1nwshTKflCnJrz2ddvq6n/Budding-Writers-User-Story-Mapping?node-id=0-1&embed-host=share" />
+            <h6>USER PERSONAS</h6>
+            <div className={styles.userPersonas}>          
+              <Image
+                alt="Primary user persona for Juno"
+                src="/images/projects/budding-writers/bw7.png"
+                width={500}
+                height={500}
+              />
+              <Image
+                alt="Secondary user persona for Youssef"
+                src="/images/projects/budding-writers/bw8.png"
+                width={500}
+                height={500}
+              /> 
+            </div>
+          </div>    
+              </>
+          }
+        />
       </main>
     </>
   );

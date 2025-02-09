@@ -1,20 +1,62 @@
-.features {
+.gallery {
     position: relative;
     z-index: 3;
     background-color: var(--black);
-    padding: 5rem;
-    color: var(--cream);
-}
-
-.features h2 {
-    margin-bottom: 0.72rem;
+    padding-top: 1rem;
 }
 
 .features > img {
     transition: transform 0.4s ease-in-out; 
   }
 
-  .features > img:hover {
-    transform: translateY(-3px);
-    color: var(--primary);
+.features > img:hover {
+  transform: translateY(-3px);
+  color: var(--primary);
+}
+
+.userPersonas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border: solid;
+}
+
+.userPersonas img {
+  flex: 1 1 50%; 
+  max-width: 50%; 
+  height: auto; 
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.brandSection {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.designNotes p {
+  background-color: #5b4f42;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  height: 95%;
+}
+
+.mockups img{
+  width: 300vw;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+  .brandSection {
+    flex-direction: column;
   }
+  .brandSection h6 {
+    margin: 1.5rem 0rem 0.5rem 0rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .brandSection {
+    flex-direction: column;
+  }
+}

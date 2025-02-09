@@ -1,14 +1,41 @@
-.container h6 {
-    margin-top: 5rem;
-}
-
-.container > img {
-    transition: transform 0.5s ease-in-out; 
-    width: 90%;
+.content > img {
+    transition: transform 0.7s ease-out; 
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  .container > img:hover {
-    transform: translateY(-3px) scale(1.05);
+  .content > img:hover {
+    transform: translateY(-3px) scale(1.03);
   }
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+  .container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 667px) {
+.container {
+  margin-bottom: 1rem;
+}
+}
+
+.gallery {
+  position: relative;
+  z-index: 3;
+  background-color: var(--black);
+  padding-top: 1rem;
+}
+
+.layout {
+  margin: 0rem 10rem;
+}
