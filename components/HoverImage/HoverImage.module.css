@@ -38,8 +38,9 @@
 }
 
 .container:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.5); 
     opacity: 1;
+    background-color: rgba(24, 23, 21, 0.5);
+    backdrop-filter: blur(10px); 
 }
 
 .container:hover .overlay h5 {
