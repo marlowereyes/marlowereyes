@@ -1,51 +1,9 @@
-.imageGallery {
-    margin: var(--margin-small);
-    margin-top: 2.72rem;
-}
-
-.image2 {
-    width: 100vw;
-}
-
-.gallerySection {
+.mockupVids {
     display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
-.gallerySection img {
-    width: 28.5vw;
-}
-
-.image5 {
-    margin-top: 0.7rem;
-    margin-bottom: 2.72rem;
-}
-
-@media (min-width: 667px) and (max-width: 1024px) {
-    .imageGallery {
-        margin: var(--margin-medium);
-        margin-top: 4rem;
-    }
-    .gallerySection {
-        gap: 1rem;
-    }
-    .image5 {
-        margin-top: 1rem;
-        margin-bottom: 5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .imageGallery {
-        margin: var(--margin-large);
-        margin-top: 6rem;
-    }
-    .gallerySection {
-        gap: 1.5rem;
-    }
-    .image5 {
-        margin-top: 1.5rem;
-        margin-bottom: 7rem;
-    }
+.video {
+    height: 100%;
 }
