@@ -2,11 +2,7 @@
     position: relative;
     z-index: 3;
     background-color: var(--black);
-    padding: 5rem;
-}
-
-.features h2 {
-    margin-bottom: 0.72rem;
+    padding-top: 1rem;
 }
 
 .features > img {
@@ -16,18 +12,6 @@
 .features > img:hover {
   transform: translateY(-3px);
   color: var(--primary);
-}
-
-.title hr {
-  border: 0; 
-  border-top: 0.2px solid var(--cream);
-  flex-grow: 1;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .userPersonas {
@@ -40,15 +24,33 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin: 0rem 8rem;
+  margin: 0rem 10rem;
 }
 
 .designNotes p {
   background-color: #5b4f42;
   padding: 2rem;
   border-radius: 0.5rem;
+  height: 95%;
 }
 
 .mockups img{
   width: 300vw;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+  .brandSection {
+    margin: 0rem 6rem;
+    flex-direction: column;
+  }
+  .brandSection h6 {
+    margin: 1.5rem 0rem 0.5rem 0rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .brandSection {
+    margin: 0rem 3rem;
+    flex-direction: column;
+  }
 }

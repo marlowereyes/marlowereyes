@@ -7,6 +7,7 @@ import styles from "./budding-writers.module.css";
 import ScaleImage from "../../../../components/ScaleImage";
 import FigmaEmbed from "../../../../components/FigmaEmbed";
 import Image from "next/image";
+import GalleryTitle from "../../../../components/GalleryTitle";
 
 export default function BuddingWriters() {
   useEffect(() => {
@@ -43,10 +44,7 @@ export default function BuddingWriters() {
         />
         <section className={styles.gallery}>
           <div className={styles.features}>
-            <div className={styles.title}>
-              <h2>Features</h2>
-              <hr />
-            </div>
+            <GalleryTitle title="Features" />
             <ScaleImage
               caption="CAFE MENU & RESERVATIONS"
               altText="Reservation form and lunch menu"
@@ -64,10 +62,7 @@ export default function BuddingWriters() {
             />
           </div>
           <div className={styles.branding}>
-            <div className={styles.title}>
-              <h2>Branding</h2>
-              <hr />
-            </div>
+          <GalleryTitle title="Branding" />
             <ScaleImage
               caption="COLOUR PALETTE"
               altText="color palette"
@@ -98,12 +93,10 @@ export default function BuddingWriters() {
             </div>
           </div>
           <div className={styles.initialProcess}>
-            <div className={styles.title}>
-              <h2>Initial Process</h2>
-              <hr />
-            </div>
+          <GalleryTitle title="Initial Process" />
             <FigmaEmbed src="https://embed.figma.com/board/K1nwshTKflCnJrz2ddvq6n/Budding-Writers-User-Story-Mapping?node-id=0-1&embed-host=share" />
             <div className={styles.userPersonas}>
+              {/**              
               <Image
                 alt="Primary user persona for Juno"
                 src="/images/projects/budding-writers/bw7.png"
@@ -115,7 +108,8 @@ export default function BuddingWriters() {
                 src="/images/projects/budding-writers/bw8.png"
                 width={500}
                 height={500}
-              />
+              /> 
+              */}
             </div>
             <FigmaEmbed src="https://embed.figma.com/design/Yfd7jOqD4pDuAy2ymZVRQo/Budding-Writers-Prototype?node-id=279-1869&embed-host=share" />
           </div>

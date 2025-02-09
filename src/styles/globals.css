@@ -39,6 +39,7 @@ h2 {
   color: var(--cream);
   font-family: var(--font-schibsted-grotesk);
   font-size: 3rem;
+  font-weight: 600;
 }
 
 h3 {
