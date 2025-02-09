@@ -1,0 +1,23 @@
+.gallery {
+    position: relative;
+    z-index: 3;
+    background-color: var(--black);
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.layout {
+    margin: 0rem 10rem;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .layout {
+        margin: 0rem 6rem;
+    }
+}
+
+@media (max-width: 667px) {
+    .layout{
+        margin: 0rem 3rem;
+    }
+}

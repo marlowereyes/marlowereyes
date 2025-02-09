@@ -1,0 +1,27 @@
+.title hr {
+  border: 0; 
+  border-top: 0.2px solid var(--cream);
+  flex-grow: 1;
+}
+
+.title {
+  margin: 5rem 0rem 2rem 0rem;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 3rem 0rem 1rem 0rem;
+    }
+}
+
+@media (max-width: 667px) {
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0rem 0.5rem 0rem;
+    }
+}
