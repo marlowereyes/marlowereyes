@@ -82,8 +82,13 @@ export default function TranquillityCranes() {
               />
               <GalleryTitle title="Branding" />
               <ScaleImage
-                caption="LIVE PUBLIC CHAT ROOM"
+                caption="COLOUR PALETTE"
                 src="/images/projects/tranquillity-cranes/tc6.png"
+                altText="test"
+              />
+              <ScaleImage
+                caption="MASCOT"
+                src="/images/projects/tranquillity-cranes/tc7.png"
                 altText="test"
               />
               <GalleryTitle title="Initial Process" />
