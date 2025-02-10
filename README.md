@@ -1,7 +1,18 @@
 # TO DO's
 
-## Civica
-- Create Design
-- Compile assets
-- Code (simple version)
+## Monday
+### Civica Case Study
+- Marketing section
+- Outcome section
 
+### About
+- Link resume
+- Image
+
+### Landing Page
+- Featured works
+
+### Projects
+- Motion graphics projects
+    - Benefits of dancing
+    - How to burp a baby
