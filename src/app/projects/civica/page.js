@@ -10,6 +10,7 @@ import Image from "next/image";
 import GalleryTitle from "../../../../components/GalleryTitle";
 import GalleryLayout from "../../../../components/GalleryLayout";
 import FeatureSwitch from "../../../../components/FeatureSwitch";
+import Link from "next/link";
 
 export default function Civica() {
   useEffect(() => {
@@ -275,6 +276,16 @@ export default function Civica() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className={styles.outcome}>
+                  <GalleryTitle title="Outcome" />
+                  <p></p>
+                  <ScaleImage 
+                    caption="OTHER SCREENS"
+                    src="/images/projects/civica/c8.png"
+                    altText="other screen mockups of the app"
+                  />
+                  <Link href="https://drive.google.com/file/d/19JG6cwvbK3n8anayYnTR3K-rsjTPJifR/view?usp=sharing">View walkthrough of the app ↗</Link>
                 </div>
               </section>
             </>
