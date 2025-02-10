@@ -1,0 +1,49 @@
+.problem {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.problem h2 {
+    color: var(--red);
+    min-width: 30vw;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.personaImages {
+    display: flex;
+    gap: 1rem;
+}
+
+.personaImages img {
+    width: 50%;
+}
+
+.gallery h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.textContainer {
+    background-color: var(--black-variant);
+    padding: 1.5rem 2rem;
+    margin: 1rem 0rem;
+}
+
+@media (max-width: 667px) {
+    .problem {
+        flex-direction: column;
+    }
+
+    .personaImages {
+        flex-direction: column;
+    }
+
+    .personaImages img {
+        width: 100%;
+    }
+
+}
