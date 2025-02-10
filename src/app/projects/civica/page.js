@@ -185,11 +185,62 @@ export default function Civica() {
                 </div>
                 <div className={styles.branding}>
                   <GalleryTitle title="Branding" />
-                  <ScaleImage
-                    caption="COLOR PALETTE"
-                    src="images/projects/civica/c5.png"
-                    altText="Civica color palatte"
-                />
+                  <h6>COLOR PALETTE</h6>
+                  <p>
+                    Through research, it was found that blue is the most
+                    commonly associated color with the legal system, making it a
+                    natural choice for the app’s design. In color theory, blue
+                    evokes feelings of calmness and trust—emotions Civica aims
+                    to instill in women as they navigate the app. To further
+                    tailor the design to its audience, a tint of purple was
+                    incorporated to introduce a sense of femininity, reflecting
+                    the app’s focus on empowering women.
+                  </p>
+                  <Image
+                    src="/images/projects/civica/c5.png"
+                    alt="Civica color palatte"
+                    width={2979}
+                    height={718}
+                  />
+                  <div className={styles.brandSplit}>
+                    <div className={styles.logo}>
+                      <h6>LOGO</h6>
+                      <p>
+                        The logo features two women depicted as hearts, united
+                        in a warm embrace. This symbolizes Civica’s commitment
+                        to providing support and solidarity to women during
+                        challenging times. By visually representing care and
+                        connection, the logo reinforces the app’s mission to
+                        empower women through their legal journeys with
+                        compassion and trust.
+                      </p>
+                      <Image
+                        src="/images/projects/civica/c5.png"
+                        alt="Civica color palatte"
+                        width={2979}
+                        height={718}
+                      />
+                    </div>
+                    <div className={styles.iconography}>
+                      <h6>ICONOGRAPHY</h6>
+                      <p>
+                        While addressing serious legal challenges, Civica’s
+                        design also showcases personalization and a welcoming,
+                        non-intimidating aesthetic. Shapes such as hearts were
+                        thoughtfully incorporated into the icons in consistency
+                        with the logo, reflecting Civica’s core value of care.
+                        This approach ensures the app feels approachable and
+                        comforting, while balancing the gravity of its purpose
+                        with an empathetic design.
+                      </p>
+                      <Image
+                        src="/images/projects/civica/c5.png"
+                        alt="Civica color palatte"
+                        width={2979}
+                        height={718}
+                      />
+                    </div>
+                  </div>
                 </div>
               </section>
             </>

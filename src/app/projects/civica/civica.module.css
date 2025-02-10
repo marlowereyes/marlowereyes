@@ -33,6 +33,15 @@
     margin: 1rem 0rem;
 }
 
+.branding p{
+    margin-bottom: 1rem;
+}
+
+.brandSplit {
+    display: flex;
+    gap: 1rem;
+}
+
 @media (max-width: 667px) {
     .problem {
         flex-direction: column;
@@ -45,5 +54,7 @@
     .personaImages img {
         width: 100%;
     }
-
+    .brandSplit {
+        flex-direction: column;
+    }
 }
