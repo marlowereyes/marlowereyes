@@ -42,6 +42,28 @@
     gap: 1rem;
 }
 
+.space {
+    margin-bottom: 2rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.icons img {
+    width: 30%;
+    height: fit-content;
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+}
+
+
 @media (max-width: 667px) {
     .problem {
         flex-direction: column;

@@ -169,18 +169,20 @@ export default function Civica() {
                       than where they were placed.
                     </p>
                   </div>
-                  <p>
-                    The elements highlighted were reconsidered to ensure the
-                    design better reflected the app’s purpose and user
-                    expectations, while also addressing usability concerns.
-                    Based on the feedback given, the app’s information
-                    architecture was reconstructed for better usability.
-                  </p>
                   <ScaleImage
                     src="/images/projects/civica/c4.png"
                     caption="SITE MAP"
                     altText="improved site map for final design"
                   />
+                  <p className={styles.space}>
+                    The elements highlighted were reconsidered to ensure the
+                    design better reflected the app’s purpose and user
+                    expectations, while also addressing usability concerns.
+                    Based on the feedback given, the app’s information
+                    architecture was reconstructed for better usability. At the
+                    same time, the mascot was removed and color was changed,
+                    while implementing dark mode screen variants.
+                  </p>
                   <FigmaEmbed src="https://embed.figma.com/design/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=0-1&embed-host=share" />
                 </div>
                 <div className={styles.branding}>
@@ -215,10 +217,10 @@ export default function Civica() {
                         compassion and trust.
                       </p>
                       <Image
-                        src="/images/projects/civica/c5.png"
-                        alt="Civica color palatte"
-                        width={2979}
-                        height={718}
+                        src="/images/projects/civica/civicaLogo.png"
+                        alt="Civica logo"
+                        width={245}
+                        height={168}
                       />
                     </div>
                     <div className={styles.iconography}>
@@ -233,12 +235,44 @@ export default function Civica() {
                         comforting, while balancing the gravity of its purpose
                         with an empathetic design.
                       </p>
-                      <Image
-                        src="/images/projects/civica/c5.png"
-                        alt="Civica color palatte"
-                        width={2979}
-                        height={718}
-                      />
+                      <div className={styles.icons}>
+                        <Image
+                          src="/images/projects/civica/icons/ci1.png"
+                          alt="icon 1"
+                          width={300}
+                          height={300}
+                        />
+                        <Image
+                          src="/images/projects/civica/icons/ci2.png"
+                          alt="icon 2"
+                          width={300}
+                          height={300}
+                        />
+                        <Image
+                          src="/images/projects/civica/icons/ci3.png"
+                          alt="icon 3"
+                          width={300}
+                          height={300}
+                        />
+                        <Image
+                          src="/images/projects/civica/icons/ci4.png"
+                          alt="icon 4"
+                          width={300}
+                          height={300}
+                        />
+                        <Image
+                          src="/images/projects/civica/icons/ci5.png"
+                          alt="icon 5"
+                          width={300}
+                          height={300}
+                        />{" "}
+                        <Image
+                          src="/images/projects/civica/icons/ci6.png"
+                          alt="icon 6"
+                          width={300}
+                          height={300}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
