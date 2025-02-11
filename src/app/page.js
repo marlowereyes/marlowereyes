@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/Footer";
+import FeatureImage from "../../components/FeatureImage";
 
 export default function Home() {
   return (
@@ -35,7 +36,41 @@ export default function Home() {
         </section>
         <section className={styles.placeholderDisclaimer}>
           <div className={styles.container}>
-            <p>This portfolio is currently under construction👷‍♀️🚧🧱 Check the projects page to see my current work!</p>
+            <FeatureImage
+              projectName="Civica"
+              type={
+                <>
+                  MOBILE APP <br />
+                  <br />
+                  <br />
+                  <span className={styles.chip}>Case Study</span>
+                </>
+              }
+              src="/images/landing-page/c.png"
+              altText="Civica mockup"
+              href="/projects/civica"
+            />
+            <FeatureImage
+              projectName="Budding Writers"
+              type="WORDPRESS WEBSITE"
+              src="/images/landing-page/bw.png"
+              altText="Budding Writers mockup"
+              href="/projects/budding-writers"
+            />
+            <FeatureImage
+              projectName="Tranquillity Cranes"
+              type="MOBILE APP"
+              src="/images/landing-page/tc.png"
+              altText="Tranquillity Cranes mockup"
+              href="/projects/tranquillity-cranes"
+            />
+            <FeatureImage
+              projectName="Give Me Love"
+              type="FILM POSTER"
+              src="/images/landing-page/gml.png"
+              altText="Give Me Love poster"
+              href="/projects/give-me-love"
+            />
           </div>
         </section>
       </main>
