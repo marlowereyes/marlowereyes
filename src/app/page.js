@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/Footer";
 import FeatureImage from "../../components/FeatureImage";
+import GalleryTitle from "../../components/GalleryTitle";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
         </section>
         <section className={styles.placeholderDisclaimer}>
           <div className={styles.container}>
+            <h2>Featured Works</h2>
             <FeatureImage
               projectName="Civica"
               type={

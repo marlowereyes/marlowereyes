@@ -26,6 +26,10 @@
     font-family: var(--font-schibsted-grotesk);;
 }
 
+.container > h2 {
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 667px) and (max-width: 1024px)  {
     .intro {
         max-width: 100%;
@@ -63,5 +67,11 @@
         background-color: var(--black);
         margin-top: 0;
         margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 667px) {
+    .chip {
+        display: none;
     }
 }
