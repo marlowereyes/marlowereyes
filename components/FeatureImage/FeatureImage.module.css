@@ -1,0 +1,88 @@
+.box {
+    background: linear-gradient(180deg, rgba(39, 39, 39, 1) 0%, rgba(24, 23, 21, 1) 75%, rgba(24, 23, 21, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 0rem 5rem 8rem;
+    height: 60vh;
+    margin-bottom: 15rem;
+    transition: 
+        background 0.8s ease-in-out, 
+        height 0.8s ease-in-out, 
+        margin-bottom 0.8s ease-in-out;
+}
+
+.box:hover {
+    background: var(--black-variant);
+    height: 100vh;
+    margin-bottom: 8rem;
+}
+
+.box img {
+    width: 70%;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease-in-out;
+}
+
+.box:hover img {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 1;
+}
+
+.text h6 {
+    margin-top: 1rem;
+}
+
+.text {
+    margin-top: 8rem;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.box:hover .text {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .text {
+        margin-top: 4rem;
+    }
+    .box {
+        margin-bottom: 6rem;
+    }
+
+    .box:hover {
+        height: 70vh;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        height: auto;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .text {
+        margin-top: 2rem;
+    }
+
+    .box img {
+        width: 80%;
+        max-width: 500px;
+        margin-top: 3rem;
+    }
+
+    .box:hover {
+        height: 70vh;
+    }
+}
