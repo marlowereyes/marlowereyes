@@ -46,3 +46,43 @@
     text-decoration: none;
     font-weight: 500;
 }
+
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .text {
+        margin-top: 4rem;
+    }
+    .box {
+        margin-bottom: 6rem;
+    }
+
+    .box:hover {
+        height: 70vh;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        height: auto;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .text {
+        margin-top: 2rem;
+    }
+
+    .box img {
+        width: 80%;
+        max-width: 500px;
+        margin-top: 3rem;
+    }
+
+    .box:hover {
+        height: 70vh;
+    }
+}
