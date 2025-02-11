@@ -158,7 +158,9 @@ a {
 
 /* Small screens */
 @media (max-width: 667px) {
-
+  h2 {
+    line-height: 3rem;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
