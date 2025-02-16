@@ -14,20 +14,26 @@
   {
     "href": "/projects/benefits-of-dancing",
     "name": "Benefits of Dancing",
-    "src": "/images/folder/gml.png",
+    "src": "/images/folder/bod.png",
     "categories": ["All", "Motion"]
   },
   {
-    "href": "/projects/tranquillity-cranes",
-    "name": "Tranquillity Cranes",
-    "src": "/images/folder/tc.png",
-    "categories": ["All", "UX/UI"]
+    "href": "/projects/silly-goose-juice",
+    "name": "Silly Goose Juice",
+    "src": "/images/folder/sgj.png",
+    "categories": ["All", "Graphic"]
   },
   {
     "href": "/projects/give-me-love",
     "name": "Give Me Love",
     "src": "/images/folder/gml.png",
     "categories": ["All", "Graphic"]
+  },
+  {
+    "href": "/projects/tranquillity-cranes",
+    "name": "Tranquillity Cranes",
+    "src": "/images/folder/tc.png",
+    "categories": ["All", "UX/UI"]
   }
   ]
   
