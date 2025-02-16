@@ -1,0 +1,13 @@
+.videoContainer p {
+    margin-top: 1rem;
+}
+
+.storyboardImages {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.storyboardImages img {
+    width: 23%;
+}

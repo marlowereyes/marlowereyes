@@ -1,18 +1,13 @@
-# TO DO's
+# TO DOs
 
-## Monday
-### Civica Case Study
-- Marketing section
-- Outcome section
+## Benefits of Dancing
+- Fix character and typography images
 
-### About
-- Link resume
-- Image
+## Silly Goose Juice
+- Write overview
+- Gather images
+- Make mockups
 
-### Landing Page
-- Featured works
-
-### Projects
-- Motion graphics projects
-    - Benefits of dancing
-    - How to burp a baby
+## Landing Page
+- Create mockups
+- create new featured component
