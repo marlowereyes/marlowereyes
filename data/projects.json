@@ -12,6 +12,12 @@
     "categories": ["All", "UX/UI"]
   },
   {
+    "href": "/projects/benefits-of-dancing",
+    "name": "Benefits of Dancing",
+    "src": "/images/folder/gml.png",
+    "categories": ["All", "Motion"]
+  },
+  {
     "href": "/projects/tranquillity-cranes",
     "name": "Tranquillity Cranes",
     "src": "/images/folder/tc.png",
