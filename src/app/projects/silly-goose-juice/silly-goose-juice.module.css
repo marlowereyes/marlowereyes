@@ -1,0 +1,12 @@
+.styleGuideSection {
+    display: flex;
+    gap: 3rem;
+}
+
+.styleGuideSection img {
+    margin-top: 1rem;
+}
+
+.dielineImages img {
+    margin-top: 1rem;
+}
