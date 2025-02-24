@@ -94,6 +94,10 @@
     margin-bottom: 1.5rem;
 }
 
+.socials {
+    display: flex;
+}
+
 @media (max-width: 667px) {
     .problem {
         flex-direction: column;

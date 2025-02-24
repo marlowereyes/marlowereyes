@@ -397,6 +397,7 @@ export default function Civica() {
                       <Link href="https://www.web.civicalaw.ca/documents" target="_blank">View the web supplement ↗</Link>
                     </div>
                   </div>
+                  {/** maybe the walk through video here? */}
                 </div>
                 <div className={styles.userResearch}>
                   <GalleryTitle title="User Research" />
@@ -615,17 +616,42 @@ export default function Civica() {
                     </div>
                   </div>
                 </div>
+                <div className={styles.marketing}>
+                  <GalleryTitle title="Marketing" />
+                  <p>The logo features two women depicted as hearts, united in a warm embrace. This symbolizes Civica’s commitment to providing support and solidarity to women during challenging times. By visually representing care and connection, the logo reinforces the app’s mission to empower women through their legal journeys with compassion and trust.</p>
+                  <div className={styles.socials}>
+                    <div className={styles.blog}>
+                      <h6>WEBSITE</h6>
+                      <Image
+                          src="/images/projects/civica/c6.png"
+                          alt="icon 6"
+                          width={1920}
+                          height={1080}
+                        />
+                        <br/>
+                      <Link href="https://www.civicalaw.ca/" target="_blank">View the website ↗</Link>
+                    </div>
+                    <div className={styles.instagram}>
+                      <h6>INSTAGRAM</h6>
+                      <Image
+                          src="/images/projects/civica/c7.png"
+                          alt="icon 6"
+                          width={1920}
+                          height={1080}
+                        />
+                        <br/>
+                      <Link href="https://www.instagram.com/civicalaw_/" target="_blank">View the Instagram ↗</Link>
+                    </div>
+                  </div>
+                </div>
                 <div className={styles.outcome}>
                   <GalleryTitle title="Outcome" />
-                  <p></p>
+                  <p>write something here</p>
                   <ScaleImage
                     caption="OTHER SCREENS"
                     src="/images/projects/civica/c8.png"
                     altText="other screen mockups of the app"
                   />
-                  <Link href="https://drive.google.com/file/d/19JG6cwvbK3n8anayYnTR3K-rsjTPJifR/view?usp=sharing">
-                    View walkthrough of the app ↗
-                  </Link>
                 </div>
               </section>
             </>
