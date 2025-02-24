@@ -80,6 +80,8 @@ export default function TranquillityCranes() {
                 src="/images/projects/tranquillity-cranes/tc5.png"
                 altText="test"
               />
+              <h6>FIGMA PROTOTYPE</h6>
+              <FigmaEmbed src="https://embed.figma.com/proto/tLsE6jUUBgDy3Fu4pdIcpB/Tranquillity-Cranes?node-id=1-351&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A351&embed-host=share" />
               <GalleryTitle title="Branding" />
               <ScaleImage
                 caption="COLOUR PALETTE"
@@ -92,7 +94,7 @@ export default function TranquillityCranes() {
                 altText="test"
               />
               <GalleryTitle title="Initial Process" />
-              <FigmaEmbed src="https://embed.figma.com/design/mkxnHxbblxQ7cckhrTDX5G/MDIA-2106-Tranquility-Cranes-Set-F?node-id=0-1&embed-host=share" />
+              <FigmaEmbed src="https://embed.figma.com/design/tLsE6jUUBgDy3Fu4pdIcpB/Tranquillity-Cranes?node-id=0-1&embed-host=share" />
             </section>
           }
         />
