@@ -48,7 +48,7 @@ export default function ProjectFeatIntro({ src, altText, overview, href, linkTex
         >
           <div className={styles.overviewText}>
             <h5>{overview}</h5>
-            <Link href={href}>{linkText}</Link>
+            <Link href={href} target="_blank">{linkText}</Link>
           </div>
         </div>
       </section>

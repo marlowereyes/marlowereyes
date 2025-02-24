@@ -97,7 +97,8 @@ export default function BuddingWriters() {
           </div>
           <div className={styles.initialProcess}>
           <GalleryTitle title="Initial Process" />
-            <FigmaEmbed src="https://embed.figma.com/board/K1nwshTKflCnJrz2ddvq6n/Budding-Writers-User-Story-Mapping?node-id=0-1&embed-host=share" />
+            <FigmaEmbed src="https://embed.figma.com/design/mN9jjYhelIoBaMQDo4C2ko/Budding-Writers?node-id=0-1&embed-host=share" />
+            <ScaleImage src="/images/projects/budding-writers/bw10.png" altText="site map" caption="SITE MAP" />
             <h6>USER PERSONAS</h6>
             <div className={styles.userPersonas}>          
               <Image
