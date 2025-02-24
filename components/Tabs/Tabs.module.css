@@ -1,0 +1,23 @@
+.tabHeaders {
+    display: flex;
+    border-bottom: 1px solid var(--cream);
+    color: var(--cream-variant);
+    margin-top: 1rem;
+}
+
+.tabButton {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.active {
+    font-weight: bold;
+    color: var(--cream);
+}
+
+.tabContent {
+    padding: 16px;
+}

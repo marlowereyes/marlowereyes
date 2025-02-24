@@ -63,6 +63,36 @@
     justify-content: center;
 }
 
+.caseContent p {
+    margin-bottom: 1rem;
+}
+
+.caseContent h3 {
+    margin-bottom: 0.5rem;
+}
+
+.possibleFeatures {
+    color: var(--cream);
+    background-color: var(--black-variant);
+    padding: 2rem;
+}
+
+.possibleFeatures h3{
+    margin-bottom: 1rem;
+}
+
+.webSupplement {
+    display: flex;
+    align-items: center;
+}
+
+.webSupplement img {
+    width: 65%;
+}
+
+.webSupplement p {
+    margin-bottom: 1.5rem;
+}
 
 @media (max-width: 667px) {
     .problem {
