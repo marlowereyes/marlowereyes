@@ -17,7 +17,7 @@ export default function Civica() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   const tabs = [
     {
       key: "one",
@@ -478,6 +478,7 @@ export default function Civica() {
                     The first is the
                     <span className={styles.bold}>
                       {" "}
+
                       unfamiliarity with the legal process
                     </span>
                     , which often leads to intense emotional stress. The second
