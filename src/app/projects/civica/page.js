@@ -463,25 +463,6 @@ export default function Civica() {
                       </Link>
                     </div>
                   </div>
-                  <section className={styles.videoContainer}>
-                    <h6>WALK THROUGH OF APP</h6>
-                    <video className={styles.video} playsInline controls>
-                      <source
-                        src="/images/projects/civica/civica-record.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-                    <p>
-                      Video not loading? View the video in a different browser:
-                    </p>
-                    <Link
-                      href="https://drive.google.com/file/d/19JG6cwvbK3n8anayYnTR3K-rsjTPJifR/view?usp=sharing"
-                      target="_blank"
-                    >
-                      View alternative ↗
-                    </Link>
-                  </section>
                 </div>
                 <div className={styles.userResearch}>
                   <GalleryTitle title="User Research" />
@@ -790,24 +771,13 @@ export default function Civica() {
                     edited with Premiere Pro.
                   </p>
                   <br />
-                  <section className={styles.videoContainer}>
-                    <video className={styles.video} playsInline controls>
-                      <source
-                        src="/images/projects/civica/civica-video.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-                    <p>
-                      Video not loading? View the video in a different browser:
-                    </p>
-                    <Link
+                  <Link
                       href="https://drive.google.com/file/d/1Obi7XkIwFcc4b2aT4VIdwl9PQNiB6A0I/view?usp=sharing"
                       target="_blank"
                     >
-                      View alternative ↗
+                      View promotional video ↗
                     </Link>
-                  </section>
+                  <ScaleImage src="/images/projects/civica/videopic.png" altText="clip of video" />
                   <h6>PRINTED MATERIALS</h6>
                   <Tabs tabs={tabsPrinted} className={styles.tabs} />
                 </div>
