@@ -321,6 +321,57 @@ export default function Civica() {
     },
   ];
 
+  const tabsPrinted = [
+    {
+      key: "one",
+      title: "Brochure",
+      content: (
+        <>
+          <img
+            src="/images/projects/civica/promotional-materials/cpm1.png"
+            alt="brochure"
+          />
+        </>
+      ),
+    },
+    {
+      key: "two",
+      title: "Business Cards",
+      content: (
+        <>
+          <img
+            src="/images/projects/civica/promotional-materials/cpm2.png"
+            alt="business cards"
+          />
+        </>
+      ),
+    },
+    {
+      key: "three",
+      title: "Poster",
+      content: (
+        <>
+          <img
+            src="/images/projects/civica/promotional-materials/cpm3.png"
+            alt="poster"
+          />
+        </>
+      ),
+    },
+    {
+      key: "four",
+      title: "Table Tents",
+      content: (
+        <>
+          <img
+            src="/images/projects/civica/promotional-materials/cpm4.png"
+            alt="table tents"
+          />
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <main>
@@ -390,14 +441,47 @@ export default function Civica() {
                   </p>
                   <FeatureSwitch />
                   <div className={styles.webSupplement}>
-                    <Image src="/images/projects/civica/cf4.png" alt="web supplement mockup" width={1920} height={1080} />
+                    <Image
+                      src="/images/projects/civica/cf4.png"
+                      alt="web supplement mockup"
+                      width={1920}
+                      height={1080}
+                    />
                     <div className={styles.webSuppText}>
                       <h3>Web Supplement</h3>
-                      <p>All simplified documents are added to your history, that way, you can access them later on any type of device, making it possible to read your important files regardless of the circumstances.</p>
-                      <Link href="https://www.web.civicalaw.ca/documents" target="_blank">View the web supplement ↗</Link>
+                      <p>
+                        All simplified documents are added to your history, that
+                        way, you can access them later on any type of device,
+                        making it possible to read your important files
+                        regardless of the circumstances.
+                      </p>
+                      <Link
+                        href="https://www.web.civicalaw.ca/documents"
+                        target="_blank"
+                      >
+                        View the web supplement ↗
+                      </Link>
                     </div>
                   </div>
-                  {/** maybe the walk through video here? */}
+                  <section className={styles.videoContainer}>
+                    <h6>WALK THROUGH OF APP</h6>
+                    <video className={styles.video} playsInline controls>
+                      <source
+                        src="/images/projects/civica/civica-record.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p>
+                      Video not loading? View the video in a different browser:
+                    </p>
+                    <Link
+                      href="https://drive.google.com/file/d/19JG6cwvbK3n8anayYnTR3K-rsjTPJifR/view?usp=sharing"
+                      target="_blank"
+                    >
+                      View alternative ↗
+                    </Link>
+                  </section>
                 </div>
                 <div className={styles.userResearch}>
                   <GalleryTitle title="User Research" />
@@ -458,13 +542,46 @@ export default function Civica() {
                       </p>
                       <Tabs tabs={tabs} className={styles.tabs} />
                       <div className={styles.possibleFeatures}>
-                        <h3>Main Possible Features Focused on Women's Support</h3>
+                        <h3>
+                          Main Possible Features Focused on Women's Support
+                        </h3>
                         <ul>
-                          <li><span className={styles.bold}>Women-Centric AI Chatbot:</span> An AI assistant that offers quick answers tailored to women’s legal and emotional challenges.</li>
-                          <li><span className={styles.bold}>Legal Aid for Women:</span> Connections to female-focused legal services.</li>
-                          <li><span className={styles.bold}>Document Templates for Women:</span> Pre-drafted forms to help women report violations, submit complaints, or file legal actions.</li>
-                          <li><span className={styles.bold}>Mental Health Support:</span> Resources and services for emotional well-being, specifically addressing women’s struggles with harassment, abuse, and exploitation.</li>
-                          <li><span className={styles.bold}>Tailored Step-by-Step Guides:</span> Clear, personalized navigation through legal processes, designed for the unique challenges women face.</li>
+                          <li>
+                            <span className={styles.bold}>
+                              Women-Centric AI Chatbot:
+                            </span>{" "}
+                            An AI assistant that offers quick answers tailored
+                            to women’s legal and emotional challenges.
+                          </li>
+                          <li>
+                            <span className={styles.bold}>
+                              Legal Aid for Women:
+                            </span>{" "}
+                            Connections to female-focused legal services.
+                          </li>
+                          <li>
+                            <span className={styles.bold}>
+                              Document Templates for Women:
+                            </span>{" "}
+                            Pre-drafted forms to help women report violations,
+                            submit complaints, or file legal actions.
+                          </li>
+                          <li>
+                            <span className={styles.bold}>
+                              Mental Health Support:
+                            </span>{" "}
+                            Resources and services for emotional well-being,
+                            specifically addressing women’s struggles with
+                            harassment, abuse, and exploitation.
+                          </li>
+                          <li>
+                            <span className={styles.bold}>
+                              Tailored Step-by-Step Guides:
+                            </span>{" "}
+                            Clear, personalized navigation through legal
+                            processes, designed for the unique challenges women
+                            face.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -618,37 +735,85 @@ export default function Civica() {
                 </div>
                 <div className={styles.marketing}>
                   <GalleryTitle title="Marketing" />
-                  <p>The logo features two women depicted as hearts, united in a warm embrace. This symbolizes Civica’s commitment to providing support and solidarity to women during challenging times. By visually representing care and connection, the logo reinforces the app’s mission to empower women through their legal journeys with compassion and trust.</p>
+                  <p>
+                    To enhance the visibility and engagement surrounding Civica,
+                    a series of promotional initiatives were implemented to
+                    provide external audiences with a comprehensive
+                    understanding of its development process and benefits. A
+                    dedicated website featuring a blog was established to
+                    document weekly progress updates, introduce the team, and
+                    highlight the platform’s features, while also offering
+                    opportunities to connect. Furthermore, content was actively
+                    promoted on Instagram to raise awareness about the upcoming
+                    Student Design & Technology Showcase, where Civica was
+                    showcased as a key project. These efforts aimed to foster
+                    interest, transparency, and engagement with the broader
+                    community.
+                  </p>
                   <div className={styles.socials}>
                     <div className={styles.blog}>
                       <h6>WEBSITE</h6>
                       <Image
-                          src="/images/projects/civica/c6.png"
-                          alt="icon 6"
-                          width={1920}
-                          height={1080}
-                        />
-                        <br/>
-                      <Link href="https://www.civicalaw.ca/" target="_blank">View the website ↗</Link>
+                        src="/images/projects/civica/c6.png"
+                        alt="icon 6"
+                        width={1920}
+                        height={1080}
+                      />
+                      <br />
+                      <Link href="https://www.civicalaw.ca/" target="_blank">
+                        View the website ↗
+                      </Link>
                     </div>
                     <div className={styles.instagram}>
                       <h6>INSTAGRAM</h6>
                       <Image
-                          src="/images/projects/civica/c7.png"
-                          alt="icon 6"
-                          width={1920}
-                          height={1080}
-                        />
-                        <br/>
-                      <Link href="https://www.instagram.com/civicalaw_/" target="_blank">View the Instagram ↗</Link>
+                        src="/images/projects/civica/c7.png"
+                        alt="icon 6"
+                        width={1920}
+                        height={1080}
+                      />
+                      <br />
+                      <Link
+                        href="https://www.instagram.com/civicalaw_/"
+                        target="_blank"
+                      >
+                        View the Instagram ↗
+                      </Link>
                     </div>
                   </div>
+                  <br />
+                  <h6>PROMOTIONAL VIDEO</h6>
+                  <p>
+                    In addition, a promotional video was created to be presented
+                    at the Student Design & Technology Showcase. The video was
+                    outlined with Storyboarder, filmed with Sony Camera, and
+                    edited with Premiere Pro.
+                  </p>
+                  <br />
+                  <section className={styles.videoContainer}>
+                    <video className={styles.video} playsInline controls>
+                      <source
+                        src="/images/projects/civica/civica-video.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p>
+                      Video not loading? View the video in a different browser:
+                    </p>
+                    <Link
+                      href="https://drive.google.com/file/d/1Obi7XkIwFcc4b2aT4VIdwl9PQNiB6A0I/view?usp=sharing"
+                      target="_blank"
+                    >
+                      View alternative ↗
+                    </Link>
+                  </section>
+                  <h6>PRINTED MATERIALS</h6>
+                  <Tabs tabs={tabsPrinted} className={styles.tabs} />
                 </div>
                 <div className={styles.outcome}>
-                  <GalleryTitle title="Outcome" />
-                  <p>write something here</p>
+                  <GalleryTitle title="Other Screens" />
                   <ScaleImage
-                    caption="OTHER SCREENS"
                     src="/images/projects/civica/c8.png"
                     altText="other screen mockups of the app"
                   />

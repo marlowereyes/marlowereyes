@@ -98,6 +98,10 @@
     display: flex;
 }
 
+.videoContainer p {
+    margin-top: 1rem;
+}
+
 @media (max-width: 667px) {
     .problem {
         flex-direction: column;
