@@ -42,7 +42,7 @@ export default function About() {
               every element serves a purpose and enhances the user experience.
             </p>
             <div className={styles.externalLinks}>
-              <Link href="">My Resume ↗</Link>
+              <Link href="https://drive.google.com/file/d/1S6Vi8VhkQsW5-kKoq2ELPW8kn5fZSD3x/view?usp=sharing">My Resume ↗</Link>
               <Link href="/projects">View my work ↗</Link>
             </div>
           </div>
