@@ -30,6 +30,12 @@
     "categories": ["All", "Graphic"]
   },
   {
+    "href": "/projects/cinematic-spaces",
+    "name": "Cinematic Spaces",
+    "src": "/images/folder/cs.png",
+    "categories": ["All", "Graphic"]
+  },
+  {
     "href": "/projects/tranquillity-cranes",
     "name": "Tranquillity Cranes",
     "src": "/images/folder/tc.png",
