@@ -1,0 +1,11 @@
+.arrow {
+    color: var(--cream);
+    font-size: 2rem;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
