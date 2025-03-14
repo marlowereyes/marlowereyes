@@ -40,6 +40,12 @@
     "name": "Tranquillity Cranes",
     "src": "/images/folder/tc.png",
     "categories": ["All", "UX/UI"]
+  },
+  {
+    "href": "/projects/buttelepus",
+    "name": "Buttelepus",
+    "src": "/images/folder/b.png",
+    "categories": ["All", "Graphic"]
   }
   ]
   
