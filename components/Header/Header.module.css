@@ -33,7 +33,6 @@
     font-family: Schibsted Grotesk;
     font-weight: 200;
     position: relative; 
-    padding-bottom: 0.5rem;
   }
   
   .navLink:hover::after {
