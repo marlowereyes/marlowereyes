@@ -38,7 +38,7 @@
   .navLink:hover::after {
     content: '';
     position: absolute;
-    bottom: 0; 
+    bottom: -5px;
     left: 50%;
     transform: translateX(-50%); 
     width: 5px; 

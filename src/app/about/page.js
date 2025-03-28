@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CardFlip from "../../../components/CardFlip";
 
+
 export default function About() {
   return (
     <>
@@ -40,9 +41,16 @@ export default function About() {
               contribute to, helping to bring your vision to life. Additionally,
               I am detail-oriented, consistently refining my work to ensure that
               every element serves a purpose and enhances the user experience.
+              <br />
+              <br />{" "}
+              <span className={styles.bold}>
+                Get to know more about me personally by playing the games below!
+              </span>
             </p>
             <div className={styles.externalLinks}>
-              <Link href="https://drive.google.com/file/d/1S6Vi8VhkQsW5-kKoq2ELPW8kn5fZSD3x/view?usp=sharing">My Resume ↗</Link>
+              <Link href="https://drive.google.com/file/d/1S6Vi8VhkQsW5-kKoq2ELPW8kn5fZSD3x/view?usp=sharing">
+                My Resume ↗
+              </Link>
               <Link href="/projects">View my work ↗</Link>
             </div>
           </div>
@@ -51,8 +59,9 @@ export default function About() {
           <div className={styles.container}>
             <h3>2 Truths 1 Lie</h3>
             <p>
-              Play this game to get to know me better! Flip the card to reveal
-              the correct answer...
+              Here are some potential fun facts about me... Tap on the cards to
+              reveal the answer and BOOM you know 5% more about me than you did
+              before ;p
             </p>
             <div className={styles.cardsContainer}>
               <CardFlip
@@ -72,6 +81,29 @@ export default function About() {
                 backColor="var(--red-variant)"
               />
             </div>
+          </div>
+        </section>
+        <section className={styles.punchUp}>
+          <div>
+            <h3>Marlowe Arcade</h3>
+            <p>
+              You want to know even MORE about me?! Play this fun mini game for
+              more facts about me.
+            </p>
+          </div>
+          <div className={styles.containera}>
+            <Link href="https://marlowe-arcade.vercel.app/">
+              <Image
+                src="/images/about/ma-ar.png"
+                width={3000}
+                height={1350}
+                alt="arcade game preview"
+                className={styles.imageArcade}
+              />
+              <div className={styles.overlay}>
+                <h3>Click to Play Game!</h3>
+              </div>
+            </Link>
           </div>
         </section>
       </main>

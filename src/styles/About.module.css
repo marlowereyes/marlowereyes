@@ -33,14 +33,81 @@
     background-color: var(--black-variant);
     display: flex;
     gap: 1rem;
-    margin: var(--margin-small);
+    margin-top: 1rem;
 }
 
 .truthsLie {
-    padding: 2rem;
+    padding: 2rem 5rem;
     background-color: var(--black-variant);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
+
+.bold {
+    font-weight: 600;
+}
+
+.punchUp {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: var(--margin-small);
+}
+
+.imageArcade {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.containera {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.overlay h5 {
+    color: var(--cream);
+    font-size: 1.5rem;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.containera:hover .imageArcade,
+.containera:hover .overlay {
+    transform: scale(1.05);
+}
+
+.containera:hover .overlay {
+    opacity: 1;
+    background-color: rgba(24, 23, 21, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+.containera:hover .overlay h5 {
+    opacity: 1;
+}
+
 
 @media (min-width: 1024px) {
     .intro {
@@ -62,6 +129,9 @@
     }
     .aboutText {
         width: 100%;
+    }
+    .punchUp {
+        margin: var(--margin-large);
     }
 }
 
@@ -85,5 +155,8 @@
     }
     .aboutText {
         width: 100%;
+    }
+    .punchUp {
+        margin: var(--margin-medium);
     }
 }
